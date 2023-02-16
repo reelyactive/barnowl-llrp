@@ -1,0 +1,11 @@
+#!/usr/bin/env node
+
+const BarnowlLlrp = require('../lib/barnowlllrp.js');
+
+let barnowl = new BarnowlLlrp();
+
+barnowl.addListener(BarnowlLlrp.TcpSocketListener, { host: "10.28.74.132" });
+
+barnowl.on('raddec', function(raddec) {
+  console.log(raddec.toFlattened());
+});

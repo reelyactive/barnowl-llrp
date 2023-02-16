@@ -1,0 +1,40 @@
+{
+  "name": "barnowl-llrp",
+  "homepage": "https://github.com/reelyactive/barnowl-llrp/",
+  "author": "reelyActive <info@reelyactive.com>",
+  "description": "Collect ambient EPC tag data from RFID readers via the Low-Level Reader Protocol (LLRP).  We believe in an open Internet of Things.",
+  "keywords": [
+    "reelyActive",
+    "barnowl",
+    "LLRP",
+    "EPC",
+    "RAIN RFID",
+    "raddec"
+  ],
+  "version": "0.1.0",
+  "engines": {
+    "node": ">=6.0.0"
+  },
+  "main": "./lib/barnowlllrp.js",
+  "scripts": {
+    "start": "node bin/barnowl-llrp"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/reelyactive/barnowl-llrp.git"
+  },
+  "dependencies": {
+    "advlib-identifier": ">=0.1.0",
+    "raddec": ">=0.4.3"
+  },
+  "devDependencies": {},
+  "bugs": {
+    "url": "https://github.com/reelyactive/barnowl-llrp/issues"
+  },
+  "contributors": [
+    {
+      "name": "Jeffrey Dungen"
+    }
+  ],
+  "license": "MIT"
+}
