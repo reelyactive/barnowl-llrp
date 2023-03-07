@@ -79,6 +79,16 @@ barnowl.addListener(BarnowlLlrp, {}, BarnowlLlrp.TcpSocketListener,
 ```
 
 
+Pareto Anywhere Integration
+---------------------------
+
+__barnowl-llrp__ includes a script to forward data to a local [Pareto Anywhere](https://www.reelyactive.com/pareto/anywhere/) instance as UDP raddecs with target localhost:50001.  Start this script with the command:
+
+    npm run forwarder xxx.xxx.xxx.xxx
+
+where xxx.xxx.xxx.xxx is the IP address of the reader.
+
+
 Compatible RFID Readers
 -----------------------
 

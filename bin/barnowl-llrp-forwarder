@@ -1,5 +1,6 @@
 #!/usr/bin/env node
 
+const dgram = require('dgram');
 const BarnowlLlrp = require('../lib/barnowlllrp.js');
 
 if(process.argv.length <= 2) {
@@ -8,8 +9,12 @@ if(process.argv.length <= 2) {
 
 let host = process.argv[2];
 
+const client = dgram.createSocket('udp4');
 let barnowl = new BarnowlLlrp();
 
 barnowl.addListener(BarnowlLlrp.TcpSocketListener, { host: host });
 
-barnowl.on('raddec', (raddec) => { console.log(raddec.toFlattened()); });
+barnowl.on('raddec', (raddec) => {
+  let raddecHex = raddec.encodeAsHexString({ includeTimestamp: true  });
+  client.send(Buffer.from(raddecHex, 'hex'), 50001, 'localhost', (err) => { });
+});
