@@ -25,7 +25,6 @@ Clone this repository, install package dependencies with `npm install`, and then
 __barnowl-llrp__ will connect with the reader at IP address xxx.xxx.xxx.xxx and output (flattened) __raddec__ JSON to the console.
 
 
-
 Hello barnowl-llrp!
 -------------------
 
@@ -78,6 +77,16 @@ The following listener interfaces are supported by __barnowl-llrp__.
 barnowl.addListener(BarnowlLlrp, {}, BarnowlLlrp.TcpSocketListener,
                     { host: "12.34.56.78", port: 5084 });
 ```
+
+
+Compatible RFID Readers
+-----------------------
+
+__barnowl-llrp__ has been validated with the following readers:
+
+- Impinj R420
+
+In theory, _any_ LLRP-compatible reader should be compatible.
 
 
 Is that owl you can do?
