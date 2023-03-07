@@ -3,6 +3,8 @@ barnowl-llrp
 
 __barnowl-llrp__ converts the decodings of _any_ ambient RAIN RFID tags by readers supporting the Low-Level Reader Protocol (LLRP) into standard developer-friendly JSON that is vendor/technology/application-agnostic.
 
+![Overview of barnowl-llrp](https://reelyactive.github.io/barnowl-llrp/images/overview.png)
+
 __barnowl-llrp__ is a lightweight [Node.js package](https://www.npmjs.com/package/barnowl-llrp) that can run on resource-constrained edge devices as well as on powerful cloud servers and anything in between.  It supports native integration with reelyActive's [Pareto Anywhere](https://www.reelyactive.com/pareto/anywhere/) open source middleware suite, and can just as easily be run standalone behind a [barnowl](https://github.com/reelyactive/barnowl) instance, as detailed in the code examples below.
 
 
