@@ -17,7 +17,8 @@
   },
   "main": "./lib/barnowlllrp.js",
   "scripts": {
-    "start": "node bin/barnowl-llrp"
+    "start": "node bin/barnowl-llrp",
+    "forwarder": "node bin/barnowl-llrp-forwarder"
   },
   "repository": {
     "type": "git",
