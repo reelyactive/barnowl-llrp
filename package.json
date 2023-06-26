@@ -26,7 +26,7 @@
   },
   "dependencies": {
     "advlib-identifier": ">=0.1.0",
-    "raddec": ">=0.4.3"
+    "raddec": ">=0.5.0"
   },
   "devDependencies": {},
   "bugs": {

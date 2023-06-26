@@ -55,6 +55,7 @@ From the same folder as the server.js file, install package dependencies with th
     {
       receiverId: "001625ffffffffff",
       receiverIdType: 1,
+      receiverAntenna: 1,
       rssi: -42,
       numberOfDecodings: 1
     }
